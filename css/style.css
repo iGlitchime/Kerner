@@ -4,6 +4,12 @@
     -moz-box-sizing: border-box; /* Для Firefox */
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: Roboto, sans-serif; /* Имя шрифта */
+    src: url(fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
 body {
     position: absolute;
     width: 100%;
@@ -25,13 +31,16 @@ body {
     color: #C0C0C0;
     font-family: sans-serif;
     font-size: 8pt;
-    border: red solid 1px;
+    /*border: red solid 1px;*/
 }
 .top-menu {
     padding: 1em;
     border-bottom: #C0C0C0 solid 1px;
     height: auto;
     width: auto;
+    font-family: Roboto, sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
 }
 .menu-block{
     height: 2em;
@@ -58,7 +67,7 @@ body {
     /*border: red solid 1px;*/
     margin: 3em 0;
 }
-.one:last-child {
+p.one:last-child {
     border: #579ac5 solid 1px;
     /*text-align: center;*/
     /*vertical-align: middle;*/
@@ -69,13 +78,16 @@ p.one{
     vertical-align: middle;
     padding: 1em 0;
     color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
 }
 .logo-line .one:first-child {
     /*background-color: deeppink;*/
     /*padding: 10px;*/
     color: white;
-    width: 230px;
-    height: 60px;
+    width: 130px;
+    height: 40px;
     /*margin: 10px;*/
     font-size: 10pt;
     background-image: url(img/logo.png);
@@ -90,9 +102,12 @@ p.one{
     /*line-height: 2em;*/
 }
 
-/*.one.bold {*/
-    /*line-height: 2.5em;*/
-/*}*/
+p.one.number{
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
 
 .thin {
     font-size: 8pt;
@@ -103,26 +118,38 @@ p.one{
 
 .logo-line button {
     color: white;
-    width: 150px;
-    height: 35px;
+    width: 100px;
+    height: 25px;
     border-radius: 20px;
     margin: 10px 0;
     background-color: #579ac5;
+    border: #579ac5 solid 1px;
+    font-family: Roboto, sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+}
+.logo-line p.one:last-child {
+    font-family: Roboto,sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .main-block {
-    min-height: 450px;
-    height: 90%;
+    min-height: 400px;
+    height: 80%;
     width: 100%;
 }
 
 .main-block p {
-    font-size: 20pt;
-    font-weight: 300;
+    /*font-size: 20pt;*/
+    /*font-weight: 300;*/
     line-height: 1.5em;
     color: white;
     margin: 0 15px;
     vertical-align: middle;
+    font-family: Roboto, sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
 }
 
 .main-block button {
@@ -137,8 +164,11 @@ p.one{
     width: 180px;
     height: 40px;
     margin: 10px 10px;
-    font-size: 10pt;
+    /*font-size: 10pt;*/
     text-align: right;
+    font-family: Roboto, sans-serif;
+    font-size: 1.125em;
+    font-weight: 400;
 }
 
 .button:hover, .button:active {
@@ -159,14 +189,21 @@ p.one{
     right: 2em;
     /*border: dodgerblue solid 1px;*/
 }
-.bottom-block {
+.bottom-block p:last-child{
     /*bottom: 0;*/
+    font-family: Roboto, sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
 
-    border: darkslateblue solid 1px;
+    /*border: darkslateblue solid 1px;*/
 }
 
-.bottom-block .row {
-    margin: 5px;
+.bottom-block div.row div p:first-child{
+    /*margin: 7px 0;*/
+    vertical-align: text-bottom;
+    font-family: Roboto, sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
 }
 
 img{
@@ -182,6 +219,9 @@ img{
 #searchbox5 {
     width: 200px;
     margin: 10px 40px;
+    font-family: Roboto, sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
 }
 
 #search52 {
@@ -197,6 +237,9 @@ img{
     text-shadow: 0 2px 2px rgba(192,192,192, 0.3);
     box-shadow: 0 1px 0 rgba(192,192,192, 0.1), 0 1px 3px rgba(192,192,192, 0.2) inset;
     -webkit-transition: all 0.7s ease 0s;
+    font-family: Roboto, sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
 }
 
 #search52:focus {
