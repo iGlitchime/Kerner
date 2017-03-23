@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box; /* Для Firefox */
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+    width: 100%;
+    background: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+}
+
+.page {
+    width: 80%;
+    /*height: 100%;*/
+    margin: 0 auto;
+    /*position: absolute;*/
+    /*margin:*/
+    /*top:0;*/
+    /*left: 0;*/
+    color: #C0C0C0;
+    font-family: sans-serif;
+    font-size: 8pt;
+    border: red solid 1px;
+}
+.top-menu {
+    padding: 1em;
+    border-bottom: #C0C0C0 solid 1px;
+    height: auto;
+    width: auto;
+}
+.menu-block{
+    height: 2em;
+    min-width: 1em;
+    /*border: red solid 1px;*/
+}
+
+.menu-button{
+    /*border: green solid 1px;*/
+    height: auto;
+    margin: 0 7px;
+    /*vertical-align: middle;*/
+    line-height: 2em;
+}
+
+.menu-block img {
+    height: 2em;
+    width: 2em;
+}
+
+.logo-line {
+    height: auto;
+    /*width: 100%;*/
+    /*border: red solid 1px;*/
+    margin: 3em 0;
+}
+.one:last-child {
+    border: #579ac5 solid 1px;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+}
+p.one{
+    margin-left: -3em;
+    /*line-height: 1.5em;*/
+    vertical-align: middle;
+    padding: 1em 0;
+    color: white;
+}
+.logo-line .one:first-child {
+    /*background-color: deeppink;*/
+    /*padding: 10px;*/
+    color: white;
+    width: 230px;
+    height: 60px;
+    /*margin: 10px;*/
+    font-size: 10pt;
+    background-image: url(img/logo.png);
+    background-position: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bold {
+    font-size: 12pt;
+    /*font-weight: bold;*/
+    text-transform: uppercase;
+    /*line-height: 2em;*/
+}
+
+/*.one.bold {*/
+    /*line-height: 2.5em;*/
+/*}*/
+
+.thin {
+    font-size: 8pt;
+    text-transform: none;
+    margin: 5px 0;
+    /* line-height: 1.5em; */
+}
+
+.logo-line button {
+    color: white;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 10px 0;
+    background-color: #579ac5;
+}
+
+.main-block {
+    min-height: 450px;
+    height: 90%;
+    width: 100%;
+}
+
+.main-block p {
+    font-size: 20pt;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: white;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+.main-block button {
+    border: gray solid 1px;
+    background-color: black;
+    background-image: url(img/menu.svg);
+    background-position: 10px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    color: white;
+    width: 180px;
+    height: 40px;
+    margin: 10px 10px;
+    font-size: 10pt;
+    text-align: right;
+}
+
+.button:hover, .button:active {
+    border: gray solid 1px;
+    background-color: black;
+    opacity: 0.1;
+}
+
+.scroll {
+    position: absolute;
+    height: 50px;
+    width: 15px;
+    top: 50%;
+    background-image: url(img/scroll.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: 2em;
+    /*border: dodgerblue solid 1px;*/
+}
+.bottom-block {
+    /*bottom: 0;*/
+
+    border: darkslateblue solid 1px;
+}
+
+.bottom-block .row {
+    margin: 5px;
+}
+
+img{
+ /*margin: 10px;*/
+}
+
+.bottom-block img {
+    height: 4em;
+    margin: 7px;
+    width: 4em;
+}
+/*---------------Search---------------------------*/
+#searchbox5 {
+    width: 200px;
+    margin: 10px 40px;
+}
+
+#search52 {
+    background: url(img/search.svg) no-repeat 10px 6px #000;
+    -webkit-background-size: 15px;
+    background-size: 15px;
+    border: 1px solid #ccc;
+    font: normal 12px Arial, Helvetica, Sans-serif;
+    color: #C0C0C0;
+    width: 200px;
+    padding: 6px 15px 6px 35px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(192,192,192, 0.3);
+    box-shadow: 0 1px 0 rgba(192,192,192, 0.1), 0 1px 3px rgba(192,192,192, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+}
+
+#search52:focus {
+    /*background: url() no-repeat 10px 6px #fcfcfc;*/
+    color: #000;
+    /*width: 200px;*/
+    box-shadow: 0 1px 0 rgba(192,192,192, 0.1), 0 1px 0 rgba(192,192,192, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(192,192,192, 0.1);
+    outline: 0;
+}
